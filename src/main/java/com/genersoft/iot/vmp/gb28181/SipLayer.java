@@ -84,6 +84,7 @@ public class SipLayer implements CommandLineRunner {
 				 | TooManyListenersException
 				 | ObjectInUseException
 				 | InvalidArgumentException e) {
+			logger.error(e.getMessage(),e);
 			logger.error("[Sip Server] tcp://{}:{} SIP服务启动失败,请检查端口是否被占用或者ip是否正确"
 					, monitorIp, port);
 		}
@@ -101,6 +102,7 @@ public class SipLayer implements CommandLineRunner {
 				 | TooManyListenersException
 				 | ObjectInUseException
 				 | InvalidArgumentException e) {
+			logger.error(e.getMessage(),e);
 			logger.error("[Sip Server] udp://{}:{} SIP服务启动失败,请检查端口是否被占用或者ip是否正确"
 					, monitorIp, port);
 		}
