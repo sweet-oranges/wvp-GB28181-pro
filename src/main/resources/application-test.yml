@@ -67,6 +67,9 @@ media:
   id: FQ3TF8yT83wh5Wvz
   # [必须修改] zlm服务器的内网IP
   ip: 192.168.0.4
+  # zlm服务器的公网地址
+  stream-ip: 122.112.136.35
+  sdp-ip: 122.112.136.35
   # [必须修改] zlm服务器的http.port
   http-port: 8080
   # [可选] zlm服务器的hook.admin_params=secret
